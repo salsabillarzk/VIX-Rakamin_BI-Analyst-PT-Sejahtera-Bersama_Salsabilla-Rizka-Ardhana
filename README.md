@@ -9,21 +9,21 @@ Pada projek ini akan dianlisis penjualan dari PT Sejahtera Bersama berdasarkan m
 
 -Tabel Products          : Primary Key adalah kolom ProdNumber dan Foreign key adalah kolom ProdNumber dilakukan inner join dengan tabel Orders serta Category dilakukan inner 	join dengan tabel ProductCategory					
 
--Tabel Products Category  : Primary Key adalah kolom CategoryAbbreviation dan Foreign key adalah kolom CategoryID dilakukan inner join dengan tabel Products
+-Tabel Products Category  : Primary Key adalah kolom CategoryID dan Foreign key adalah kolom CategoryID dilakukan inner join dengan tabel Products
 Pembuatan master table pada dataset penjualan dilakukan dengan Google Big Query dimana menggunakan syntax SELECT, SUM, INNER JOIN,GROUP BY, dan ORDER BY, seperti dibawah ini
 
 `SELECT  
 od.Date as order_date,pdc.CategoryName as category_name,pd.ProdName as product_name,pd.Price as product_price,od.Quantity as order_qty,SUM(pd.Price*od.Quantity) as total_sales,cs.CustomerEmail as cust_email,cs.CustomerCity as cust_city`
 
-`FROM `rakamin-intern-bank-muamalat.penjualan.customers` as cs`
+`FROM rakamin-intern-bank-muamalat.penjualan.customers as cs`
 
-`inner join `rakamin-intern-bank-muamalat.penjualan.orders` as od
+`inner join rakamin-intern-bank-muamalat.penjualan.orders as od
 on cs.CustomerID=od.CustomerID`
 
-`inner join `rakamin-intern-bank-muamalat.penjualan.products` as pd
+`inner join rakamin-intern-bank-muamalat.penjualan.products as pd
 on od.ProdNumber=pd.ProdNumber`
 
-`inner join `rakamin-intern-bank-muamalat.penjualan.productscategory` as pdc
+`inner join rakamin-intern-bank-muamalat.penjualan.productscategory as pdc
 on pd.Category=pdc.CategoryID`
 
 `GROUP BY 1,2,3,4,5,7,8`
