@@ -40,6 +40,12 @@ Master data penjualan yang telah diperoleh melalui Google Big Query perlu divisu
 ![Looker_Studio_Reporting_-_28_01_24,_16 32-1](https://github.com/salsabillarzk/VIX-Rakamin_BI-Analyst-PT-Sejahtera-Bersama_Salsabilla-Rizka-Ardhana/assets/157949784/af93eeee-a99e-442d-b7d4-bbc9e0d64247)
 
 Berdasarkan hasil visualisasi dapat dibuat kesimpulan atau Keputusan untuk meningkatkan atau mempertahankan penjualan dengan cara berikut :
+-Evaluasi terhadap produk-produk dengan total sales yang rendah seperti ebooks dan blue prints. Kedua produk tersebut menempati top 3 penjualan berdasarkan kuantitas tetapi termasuk produk dengan penjualan dengan total sales terendah. Perlu dilakukan evaluasi terhadap peningkatan harga jual atau peningkatan jumlah kuantitas pada kedua produk tersebut. 
+
+-Peningkatan promosi dan penggencaran ekspansi terhadap produk-produk dengan toal sales dan quantity rendah. Perlu penambahan jumlah sales, atau pen ambahan exposure produk dan brand untuk wilayah-wilayah tersebut. Pada wilayah dengan penjulan tertinggi perlu dipertahankan ataupun dapat diterapkan pada daerah lain dengan penjualan lebih rendah. 
+
+-Loyalty program pada pelanggan dengan total sales atau daerah dengan penjualan tinggi agar pelanggan tetap memilih produk tersebut untuk waktu yang akan datang.
+
 
 
 
